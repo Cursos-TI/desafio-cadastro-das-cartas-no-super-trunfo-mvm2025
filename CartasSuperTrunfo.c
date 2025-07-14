@@ -12,6 +12,7 @@ int main() {
     int pturistico1, pturistico2;  // 50 , 30
     float denspop1, denspop2;
     float pibper1, pibper2;
+
     printf("**carta 1 ** \n");
     
     printf("QUAL É O ESTADO:\n");
@@ -71,8 +72,8 @@ int main() {
     printf("ARÉA:%.2fKM2\n", area1);
     printf("PIB:%.2f BILHOES DE REAIS\n", pib1);
     printf("PONTOS TURISTICOS:%d\n", pturistico1);
-    printf("DENSIDADE POPULACIONAL:%f hab/km2\n", denspop1);
-    printf("PIB PER CAPITA:%f reais\n", pibper1);
+    printf("DENSIDADE POPULACIONAL:%.2f hab/km2\n", denspop1);
+    printf("PIB PER CAPITA:%.2f reais\n", pibper1);
     
     printf("CARTA:2\n");
     printf("ESTADO:%s\n", estado2);
@@ -82,19 +83,16 @@ int main() {
     printf("ARÉA:%.2fKM2\n", area2);
     printf("PIB:%.2f BILHOES DE REAIS\n", pib2);
     printf("PONTOS TURISTICOS:%d\n", pturistico2);
-    printf("DENSIDADE POPULACIONAL:%f hab/km2\n", denspop2);
-    printf("PIB PER CAPITA:%f reais\n", pibper2);
-    
-    return 0;
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("DENSIDADE POPULACIONAL:%.2f hab/km2\n", denspop2);
+    printf("PIB PER CAPITA:%.2f reais\n", pibper2);
 
+    if(populacao1 > populacao2){
+        printf("populaçao sao paulo e maior que a rio de janeiro\n");
+    } else {   
+        printf ("a populaçao do rio de janeiro e maior que de sao paulo");
+    }
+    
+
+    return 0;
+    
 }
